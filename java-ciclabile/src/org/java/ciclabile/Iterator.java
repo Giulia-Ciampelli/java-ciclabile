@@ -16,16 +16,25 @@
 
 package org.java.ciclabile;
 
-public class Arrays {
+public class Iterator {
 
     private int[] numbers;
+    private int counter;
 
     // costruttore
-    Arrays(int[] numbers) {
+    Iterator(int[] numbers) {
         this.numbers = numbers;
+        this.counter = 0;
+    }
+
+    public void getArray() {
+        System.out.println("Array: ");
+        for (int i : numbers) {
+            System.out.println(i);
+        }
     }
     
-    public int getElementoSuccessivo() {
-        // counter?
-    }
+    // public int getElementoSuccessivo() {
+    //     // counter?
+    // }
 }
