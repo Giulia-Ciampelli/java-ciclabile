@@ -6,6 +6,9 @@ public class Main {
 
         Iterator numeri = new Iterator(numbers);
 
-        numeri.getArray();
+        // ciclo while per usare l'iterator
+        while (numeri.hasAncoraElementi()) {
+            System.err.println(numeri.getElementoSuccessivo());
+        }
     }
 }

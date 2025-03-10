@@ -27,14 +27,22 @@ public class Iterator {
         this.counter = 0;
     }
 
-    public void getArray() {
-        System.out.println("Array: ");
-        for (int i : numbers) {
-            System.out.println(i);
+    public boolean hasAncoraElementi() {
+        if(numbers.length == 0) {
+            return false;
         }
+        return true;
     }
-    
-    // public int getElementoSuccessivo() {
-    //     // counter?
-    // }
+        
+    public int getElementoSuccessivo() {
+
+        // metto un int che corrisponde all'elemento dentro all'array, con dentro il counter
+        int result = this.numbers[this.counter];
+
+        // faccio aumentare il counter
+        this.counter++;
+        return result;
+    }
+
+    // esiste un modo per fare il ciclo while dentro il metodo?
 }
