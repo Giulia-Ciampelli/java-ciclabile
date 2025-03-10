@@ -28,10 +28,10 @@ public class Iterator {
     }
 
     public boolean hasAncoraElementi() {
-        if(numbers.length == 0) {
-            return false;
+        if(counter < numbers.length) {
+            return true;
         }
-        return true;
+        return false;
     }
         
     public int getElementoSuccessivo() {
